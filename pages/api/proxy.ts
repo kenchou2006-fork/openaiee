@@ -16,7 +16,7 @@ export default async function handler(req: NextRequest) {
   } else if (url.pathname.startsWith('/v1/messages') || url.pathname.startsWith('/v1/complete')) {
     url.host = 'api.anthropic.com';
   } else {
-    url.host = 'api.openai.com';
+    url.host = 'api.chatanywhere.org';
   }
   
   url.protocol = 'https:';
